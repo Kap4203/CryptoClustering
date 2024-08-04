@@ -21,19 +21,26 @@ This project aims to analyze cryptocurrency market data to identify patterns and
 ## Results
 ### PCA Results
 - The three principal components explained 89.5% of the variance.
-- ![alt text](image.png)
 
 ### K-Means Clustering Results
 - The optimal number of clusters was found to be three.
-- [Include any relevant visualizations or tables]
 
-### Feature Influence
-- Features with the strongest influence on each principal component were identified.
-- [Include any relevant tables or summaries]
 
 ## Conclusion
 - The analysis revealed distinct clusters of cryptocurrencies based on their price change percentages.
 - PCA helped in reducing the dimensionality and capturing the most important features.
+
+<p>For PCA1:<br>
+- Strongest positive influence: price_change_percentage_200 (0.594468)<br>
+- Strongest negative influence: price_change_percentage_24h (-0.416728)
+
+<p>For PCA2:<br>
+- Strongest positive influence: price_change_percentage_30d (0.562182)<br>
+- Strongest negative influence: price_change_percentage_1y (-0.150789)
+
+<p>For PCA3:<br>
+- Strongest positive influence: price_change_percentage_7d (0.787670)<br>
+- Strongest negative influence: price_change_percentage_60d (-0.361377)
 
 ## Files in the Repository
 - `crypto_market_data.csv`
@@ -43,7 +50,7 @@ This project aims to analyze cryptocurrency market data to identify patterns and
 
 ## How to Run the Code
 1. Clone the repository.
-2. Install the required libraries: `pandas`, `scikit-learn`, `hvplot`.
+2. Install the required libraries: `pandas` and `scikit-learn`.
 3. Run the Jupyter Notebook: `Crypto_Clustering.ipynb`.
 
 ## License
